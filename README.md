@@ -1,5 +1,29 @@
 # Express Practice
 
+app.get('/', function (data) {contacts});
+app.get('/foo/:id', function (data) {vehicles});
+app.post('/foo/:id', function (data) {comments});
+app.post('/foo/:id', function (data) {products});
+
+
+
+var express = require("express"),
+    app = express.createServer();
+
+app.get("/vehicles", function(req, res, next){
+  res.write("vehicles");
+  next();
+});
+
+app.get("/comments", function(req, res){
+  res.end("comments");
+});
+
+app.get("/products", function(req, res){
+  res.end("products
+
+
+
 ## Setup
 
 Initialize and run the app: `npm install` && `npm start`.
@@ -24,6 +48,7 @@ A web page has been created for us. Our job is to build the server.
   * Remember: `bodyParser.json()`
 
 ### Create express routes to get all things
+
 
 * Between lines 2 and 3, require the data from the following .js files:
   * /data/contacts
